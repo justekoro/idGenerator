@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Idgen test</title>
+    <script src="/idgen.js">
+    <script>
+    function idGen(){gen(10, true, (r) => {document.getElementById("generated").innerHTML = r})}
+    </script>
+  </head>
+  <body>
+    <button onclick="idGen()">Generate id</button>
+    <p id="generated"></p>
+  </body>
+</html>
